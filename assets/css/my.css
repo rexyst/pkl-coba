@@ -8,71 +8,71 @@
     src: url(../fonts/modern_sans_serif.ttf);
 }
 
-html {
+html body {
     scroll-behavior: smooth;
-}
-
-body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    right: 0;
     background-color: gold;
-    padding-top: 50px;
 }
 
-#home {
-    height: 50px;
-    width: 100%;
-}
-
-.home {
-    float: left;
-    width: 100%;
-    padding: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 500px;
-}
-
-h1 {
-    font-family: modern-sans;
-}
-
-h2 {
-    font-family: modern-sans;
-}
-
-h3 {
-    font-family: modern-sans;
-}
-
-h4 {
-    font-family: modern-sans;
-}
-
-h5 {
-    font-family: modern-sans;
-}
-
-.header-left {
-    float: left;
-    overflow: auto;
-    width: 50%;
+.main-container {
+    padding-left: 2%;
     padding-right: 2%;
 }
 
-.header-right {
-    float: right;
-    overflow: auto;
-    width: 50%;
-    padding-left: 2%;
+#home, #fahmi, #firdaus, #habib {
+    height: 50px;
+}
+
+.home-container {
+    float: left;
+    width: 100%;
+    height: fit-content;
+}
+
+.home {
+    width: 100%;
+}
+
+.home h4 {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.home-left {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.home-right {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.home-left h4, .home-right h4 {
+    font-style: normal !important;
+    font-weight: lighter !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: modern-sans;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: gold;
+    background-color: blueviolet;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 30px;
+    height: 42px;
     border-radius: 0px;
+    vertical-align: top;
 }
 
 .navbar a {
@@ -81,7 +81,6 @@ h5 {
     color: black;
     text-align: center;
     padding: 10px 10px;
-    height: 100%;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -90,7 +89,7 @@ h5 {
 
 .navbar a:hover {
     text-decoration: underline;
-    color: darkgray;
+    color: rgb(224, 224, 224);
 }
 
 .nav-left {
@@ -103,21 +102,26 @@ h5 {
     padding-right: 5%;
 }
 
-.nav-logo {
+.nav-left a {
     font-family: azonic;
-    padding-top: 10px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+}
+
+.nav-left a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .magang {
     float: left;
     width: 100%;
     height: 500px;
-    margin-top: 100px;
-    padding: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-top: 80px;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 td, th {
@@ -126,6 +130,7 @@ td, th {
     padding-top: 10px;
     font-size: 20px;
     font-family: modern-sans;
+    text-align: left;
 }
 
 .separator {
@@ -133,21 +138,88 @@ td, th {
 }
 
 .table-left {
+    left: 0;
     float: left;
-    width: 25%;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 5%;
 }
 
 .table-right {
-    float: right;
-    width: 75%;
-    padding-left: 5%;
+    float: left;
+    width: 60%;
 }
 
 .table-left img {
     width: 100%;
-    margin-right: 10px;
-    border: 5px solid rgba(0,0,0,0.5);
-    border-radius: 5px;
+    border: 8px solid rgba(0, 23, 230, 0.5);
+    border-radius: 50%;
+}
+
+.footer {
+    float: right;
+    clear: right;
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+    height: 200;
+    border-radius: 0px;
+}
+
+.footer-left {
+    float: left;
+    width: 30%;
+    padding-left: 1%;
+    overflow-x: hidden;
+    color: bisque;
+}
+
+.footer-center {
+    float: left;
+    padding-left: 1%;
+    width: 35%;
+    padding-right: 1%;
+    overflow-x: hidden;
+}
+
+.footer-right {
+    float: right;
+    width: 30%;
+    overflow-x: hidden;
+    text-align: right;
+    padding-right: 1%;
+    font-family: modern-sans;
+    font-size: 16px;
+    color: bisque;
+    padding-top: 2%;
+}
+
+.footer-logo {
+    font-family: azonic;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footext {
+    font-family: modern-sans;
+    font-size: 16px;
+    color: bisque;
+}
+
+.contact {
+    color: bisque;
+}
+
+.contact a {
+    text-decoration: none;
+    color: bisque;
+    font-family: modern-sans;
+    font-size: 16px;
+}
+
+.contact a:hover {
+    color: cyan;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:800px) {
