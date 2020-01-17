@@ -15,7 +15,7 @@ html body {
     position: relative;
     overflow-x: hidden;
     right: 0;
-    background-color: gold;
+    background: linear-gradient(42.04deg, #FDC51021.87%, rgba(250, 224, 38, 0.62) 91.89%);
 }
 
 .main-container {
@@ -111,6 +111,26 @@ h1, h2, h3, h4, h5, h6 {
 .nav-left a:hover {
     text-decoration: none;
     color: black;
+}
+
+.sub-nav-mobile {
+    display: none;
+    height: 200px;
+    float: right;
+    z-index: 999;
+    background-color: blueviolet;
+}
+
+.sub-nav-mobile a {
+    display: block;
+    position: fixed;
+    color: black;
+    text-align: right;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: azonic;
 }
 
 .magang {
@@ -227,8 +247,120 @@ td, th {
     text-decoration: underline;
 }
 
-@media screen and (max-width:800px) {
-    .left , .main, .right, .navbar {width:100%;}
+@media screen and (max-width:600px) {
+    .navbar {width:100%;}
+
+    .nav-right .nav-menu {
+        display: none;
+    }
+
+    .nav-right .menu-mobile {
+        display: block;
+    }
+
+    .home-left {
+        float: left;
+        width: 100%;
+    }
     
+    .home-right {
+        float: left;
+        width: 100%;
+    }
+ 
+    td, th {
+        vertical-align: top;
+        padding: 5px;
+        font-size: 16px;
+        font-family: modern-sans;
+        text-align: left;
+    }
+
+    .table-left {
+        float: left;
+        width: 93%;
+    }
+    
+    .table-right {
+        float: left;
+        width: 100%;
+    }
+
+    .magang {
+        float: left;
+        width: 100%;
+        height: 850px;
+        margin-top: 80px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        float: right;
+        clear: right;
+        display: block;
+        background-color: blueviolet;
+        width: 100%;
+        height: 450px;
+        border-radius: 0px;
+    }
+    
+    .footer-left {
+        float: left;
+        width: 100%;
+        overflow-x: hidden;
+        color: bisque;
+    }
+    
+    .footer-left a {
+        text-decoration: none;
+        color: bisque;
+    }
+    
+    .footer-center {
+        float: left;
+        width: 100%;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    .footer-right {
+        float: right;
+        width: 100%;
+        overflow-x: hidden;
+        text-align: right;
+        font-family: modern-sans;
+        font-size: 16px;
+        color: bisque;
+        padding-top: 50px;
+    }
+    
+    .footer-logo {
+        font-family: azonic;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .footext {
+        font-family: modern-sans;
+        font-size: 16px;
+        color: bisque;
+    }
+    
+    .contact {
+        color: bisque;
+    }
+    
+    .contact a {
+        text-decoration: none;
+        color: bisque;
+        font-family: modern-sans;
+        font-size: 16px;
+    }
+    
+    .contact a:hover {
+        color: cyan;
+        text-decoration: underline;
+    }
+
 }
 
