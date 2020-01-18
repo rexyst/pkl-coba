@@ -113,24 +113,8 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-.sub-nav-mobile {
+#sub-nav-mobile {
     display: none;
-    height: 200px;
-    float: right;
-    z-index: 999;
-    background-color: blueviolet;
-}
-
-.sub-nav-mobile a {
-    display: block;
-    position: fixed;
-    color: black;
-    text-align: right;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: azonic;
 }
 
 .magang {
@@ -248,16 +232,49 @@ td, th {
 }
 
 @media screen and (max-width:600px) {
-    .navbar {width:100%;}
 
+    .main-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar {
+        width:100%;
+        position: relative;
+    }
+    
     .nav-right .nav-menu {
         display: none;
     }
-
+    
     .nav-right .menu-mobile {
         display: block;
     }
 
+    #sub-nav-mobile {
+        display: none;
+        width: 100%;
+        right: 0;
+        float: right;
+        z-index: 999;
+        background-color: blueviolet;
+    }
+    
+    #sub-nav-mobile a {
+        display: block;
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: azonic;
+    }
+    
+    #sub-nav-mobile a:hover {
+        color: bisque;
+        text-decoration: underline;
+    }
+    
     .home-left {
         float: left;
         width: 100%;
@@ -267,7 +284,7 @@ td, th {
         float: left;
         width: 100%;
     }
- 
+    
     td, th {
         vertical-align: top;
         padding: 5px;
@@ -276,23 +293,30 @@ td, th {
         text-align: left;
     }
 
+    .cv-table .separator {
+        width: 10px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    
     .table-left {
         float: left;
         width: 93%;
     }
     
     .table-right {
+        padding-top: 30px;
         float: left;
         width: 100%;
     }
-
+    
     .magang {
         float: left;
         width: 100%;
         height: 850px;
         margin-top: 80px;
     }
-
+    
     .footer {
         margin-top: 100px;
         float: right;
@@ -306,7 +330,8 @@ td, th {
     
     .footer-left {
         float: left;
-        width: 100%;
+        width: 95%;
+        padding-left: 5%;
         overflow-x: hidden;
         color: bisque;
     }
@@ -318,20 +343,23 @@ td, th {
     
     .footer-center {
         float: left;
-        width: 100%;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
         overflow-x: hidden;
         padding-top: 20px;
     }
     
     .footer-right {
         float: right;
-        width: 100%;
+        width: 95%;
         overflow-x: hidden;
         text-align: right;
         font-family: modern-sans;
         font-size: 16px;
         color: bisque;
-        padding-top: 50px;
+        padding-top: 20px;
+        padding-right: 5%;
     }
     
     .footer-logo {
@@ -361,6 +389,6 @@ td, th {
         color: cyan;
         text-decoration: underline;
     }
-
+    
 }
 

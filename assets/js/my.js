@@ -15,3 +15,26 @@ $(document).ready(function(){
         }
     });
 });
+
+// $(document).ready(function(){
+//     $("a").on('click', function(event) {
+//         if (this.hash !== "") {
+//             event.preventDefault();
+            
+//             if (this.hash == 'menu-mobile') {
+//                 menuClick();
+//             }
+//         }
+//     });
+// });
+
+function menuClick() {
+    var subMobile = document.getElementById('sub-nav-mobile');
+    
+    if (subMobile.style.display=='none') {
+        subMobile.style.display='block'
+    } else {
+        subMobile.style.display = 'none';
+    }
+    
+}
