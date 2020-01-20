@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
+    background-image: url(../img/nav-bg.png);
     background-color: blueviolet;
     position: fixed;
     top: 0;
@@ -82,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     color: black;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0px 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -91,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar a:hover {
     text-decoration: underline;
-    color: rgb(224, 224, 224);
+    color: rgb(255, 255, 255);
 }
 
 .nav-left {
@@ -100,13 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-left img {
-    padding-top: 0px !important;
-    height: 30px;
+    padding-top: 2px;
+    height: 40px;
 }
 
 .nav-right {
     float: right;
     padding-right: 5%;
+}
+
+.nav-right a {
+    padding-top: 13px;
 }
 
 .nav-right .menu-mobile {
