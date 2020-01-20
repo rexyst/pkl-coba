@@ -16,6 +16,8 @@ html body {
     overflow-x: hidden;
     right: 0;
     background: linear-gradient(42.04deg, #FDC51021.87%, rgba(250, 224, 38, 0.62) 91.89%);
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
 }
 
 .main-container {
@@ -97,9 +99,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 5%;
 }
 
+.nav-left img {
+    padding-top: 0px !important;
+    height: 30px;
+}
+
 .nav-right {
     float: right;
     padding-right: 5%;
+}
+
+.nav-right .menu-mobile {
+    display: none;
 }
 
 .nav-left a {
@@ -232,6 +243,10 @@ td, th {
 }
 
 @media screen and (max-width:600px) {
+
+    html body {
+        background: linear-gradient(42.04deg, #FDC51021.87%, rgba(250, 224, 38, 0.62) 91.89%);
+    }
 
     .main-container {
         padding-left: 5%;
