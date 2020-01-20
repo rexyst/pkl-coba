@@ -39,10 +39,43 @@ html body {
     width: 100%;
 }
 
+.home h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 77px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4pxrgba(0, 0, 0, 0.25);
+}
+
 .home h4 {
     font-style: normal;
-    font-weight: lighter;
+    font-weight: 900;
+    font-size: 21px;
+    color: white;
+    text-shadow: 0px 4px 4pxrgba(0, 0, 0, 0.25);
 }
+
+.home-left h4, .home-right h4 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21px;
+    color: black;
+    text-shadow: 0px 4px 4pxrgba(0, 0, 0, 0.25);
+}
+
+.home-left h2, .home-right h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4pxrgba(0, 0, 0, 0.25);
+}
+
+/* .home h4 {
+    font-style: normal;
+    font-weight: lighter;
+} */
 
 .home-left {
     float: left;
@@ -247,17 +280,21 @@ td, th {
     text-decoration: underline;
 }
 
-@media screen and (max-width:600px) {
+.to-top {
+    display: none;
+}
 
+@media screen and (max-width:600px) {
+    
     html body {
         background: linear-gradient(42.04deg, #FDC51021.87%, rgba(250, 224, 38, 0.62) 91.89%);
     }
-
+    
     .main-container {
         padding-left: 5%;
         padding-right: 5%;
     }
-
+    
     .navbar {
         width:100%;
         position: relative;
@@ -270,7 +307,7 @@ td, th {
     .nav-right .menu-mobile {
         display: block;
     }
-
+    
     #sub-nav-mobile {
         display: none;
         width: 100%;
@@ -312,7 +349,7 @@ td, th {
         font-family: modern-sans;
         text-align: left;
     }
-
+    
     .cv-table .separator {
         width: 10px;
         padding-left: 10px;
@@ -408,6 +445,21 @@ td, th {
     .contact a:hover {
         color: cyan;
         text-decoration: underline;
+    }
+
+    .to-top {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .to-top img {
+        width: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: rgba( 228, 228, 228, 0.5);
+        border-radius: 50%;
     }
     
 }
